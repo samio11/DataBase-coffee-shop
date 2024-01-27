@@ -86,7 +86,9 @@ async function run() {
 }
 run().catch(console.dir);
 
-
+  app.get('/',(req,res)=>{
+    res.send('DataBase Connected')
+  })
 app.listen(port,()=>{
     console.log(`Port is awesome at :- ${port}`)
 })
